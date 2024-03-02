@@ -1,0 +1,13 @@
+/* write a containing media query to be applied at a viewport width of 500px or greater*/
+@media screen and (min-width: 500px) {
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
