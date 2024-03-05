@@ -1,0 +1,145 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+/* Header, Nav, Main, Footer */
+header, nav, main, footer {
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Header */
+header {
+    background-color: #295A66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin-bottom: 0%;
+    color: white;
+    font-size: 40px;
+}
+
+header img {
+    margin-right: 50px;
+    box-shadow: 5px 5px 5px rgba(17, 38, 44, 0.9);
+    border-radius: 10px;
+    display: block;
+}
+
+header span {
+    color: white;
+}
+
+/* H1 */
+h1 {
+    font-size: 50px;
+}
+
+/* Navigation */
+nav {
+    background-color: #172A3A;
+    margin-top: 0%;
+    padding: 0%;
+}
+
+/* Navigation link */
+nav ul {
+    list-style-type: none;
+    margin-top: 0%;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Active link */
+.active {
+    background-color: rgba(118, 65, 52, 0.9);
+}
+
+/* Main H1 */
+main h1 {
+    font-size: 30px;
+    color: #172A3A;
+}
+
+/* Class Grid */
+#class-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+/* Card */
+main section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+    box-shadow: 5px 5px 10px #2660A4;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+main h2 {
+    margin: 0%;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #346083;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* List */
+main ul {
+    padding-left: 1rem;
+    list-style: none;
+    text-align: left;
+}
+
+main ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #295A66;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+p img {
+    margin-left: 5px; 
+}
