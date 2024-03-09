@@ -1,5 +1,4 @@
 /* Reset */
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -22,11 +21,12 @@ header, nav, main, footer {
 
 /* Header */
 header {
+    position: relative;
     background-color: #295A66;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 0%;
     color: white;
     font-size: 40px;
@@ -43,11 +43,6 @@ header span {
     color: white;
 }
 
-/* H1 */
-h1 {
-    font-size: 50px;
-}
-
 /* Navigation */
 nav {
     background-color: #172A3A;
@@ -55,30 +50,89 @@ nav {
     padding: 0%;
 }
 
-/* Navigation link */
+/* small view navigation */
+#myButton {
+	font-size: 2rem;
+    background: none;
+	border: none;
+	color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+ 	padding: .25rem 2vw;
+}
+
+#myButton::before {
+	content: "☰";
+}
+
+#myButton.open::before {
+	content: "❎";
+}
+
+ul.menuLinks li a{
+    border: pink;
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.menuLinks{
+    display: none;
+}
+
+ul.menuLinks.open{
+    display: block;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+/* Active link */
+li.active {
+    background-color: rgba(118, 65, 52, 0.9);
+}
+
+.wayfinding::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
 nav ul {
     list-style-type: none;
     margin-top: 0%;
-}
-
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
 }
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Active link */
-.active {
-    background-color: rgba(118, 65, 52, 0.9);
-}
-
 /* Main H1 */
+main{
+    background-color: #eee;
+}
 main h1 {
     font-size: 30px;
     color: #172A3A;
@@ -94,7 +148,6 @@ main h1 {
 /* Card */
 main section {
     background-color: #fff;
-    border: 1px solid #ddd;
     margin: 1rem 0;
     box-shadow: 5px 5px 10px #2660A4;
     border-radius: 20px;
@@ -142,4 +195,13 @@ p {
 
 p img {
     margin-left: 5px; 
+}
+
+#mode {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }

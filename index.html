@@ -17,12 +17,14 @@
 </head>
 <body>
     <header>
+        <div id="mode">🌙</div>
         <img src="images/profile.jpg" alt="Crisanta N. Advincula" width="100" height="156">
         <span>Crisanta N. Advincula</span>
     </header>
     <nav>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li class="active"><a href="#" class="wayfinding">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
             <li><a href="#">Form</a></li>
@@ -56,6 +58,8 @@
             <p id="lastModified"></p>
         </div>
     </footer>
-<script src="scripts/getDates.js"></script>  
+<script src="scripts/getDates.js"></script> 
+<script src="scripts/showHamburger.js"></script> 
+<script src="scripts/selectMode.js"></script>  
 </body>
 </html>

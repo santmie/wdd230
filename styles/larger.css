@@ -4,10 +4,14 @@
         width: auto;
     }
 
-    nav ul {
-        display: flex;
-        justify-content: center;
-    }
+    #myButton {
+		display: none; /* hide hamburger button */
+	}
+
+	ul.menuLinks, ul.menuLinks.open {
+		display: flex;
+        justify-content: flex-end;
+	}
 
     nav ul li {
         flex: 1 1 100%;
