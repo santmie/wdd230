@@ -1,0 +1,262 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+/* Header, Nav, Main, Footer */
+header, nav, main, footer {
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    width: 90%;
+    max-width: 1600px;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: #295A66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 0%;
+    color: white;
+    font-size: 40px;
+}
+
+header img {
+    margin-right: 50px;
+    box-shadow: 5px 5px 5px rgba(17, 38, 44, 0.9);
+    border-radius: 10px;
+    display: block;
+}
+
+header span {
+    color: white;
+}
+
+.social-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 60px 60px;
+}
+
+/* Navigation */
+nav {
+    background-color: #172A3A;
+    margin-top: 0%;
+    padding: 0%;
+}
+
+/* small view navigation */
+#myButton {
+	font-size: 2rem;
+    background: none;
+	border: none;
+	color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+ 	padding: .25rem 2vw;
+}
+
+#myButton::before {
+	content: "☰";
+}
+
+#myButton.open::before {
+	content: "❎";
+}
+
+ul.menuLinks li a{
+    border: pink;
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.menuLinks{
+    display: none;
+}
+
+ul.menuLinks.open{
+    display: block;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+/* Active link */
+li.active {
+    background-color: rgba(118, 65, 52, 0.9);
+}
+
+.wayfinding::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 0%;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#hero, .home-grid {
+    display: block;
+    height: auto;
+}
+
+#hero {
+    margin-top: 0;
+}
+#hero-msg {
+    margin-top: 0;
+}
+#hero-msg h4 {
+    display: none;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg h1, #hero-msg h4{
+    text-align: center;
+}
+#hero-img{
+    width: 100%;
+}
+.button-box{
+    text-align: center;
+}
+
+.join{
+    background-color: #8ac8e5;
+    color: #023047;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.join:hover{
+    background-color: #e07800;
+    color: white;
+}
+
+/* Main H1 */
+main{
+    background-color: #eee;
+}
+main h1 {
+    font-size: 30px;
+    color: #172A3A;
+}
+
+/* Class Grid */
+#class-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+#business-grid {
+    display: block;
+}
+
+/* Card */
+main section {
+    background-color: #fff;
+    margin: 1rem 0;
+    box-shadow: 5px 5px 10px #2660A4;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+main h2 {
+    margin: 0%;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #346083;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* List */
+main ul {
+    padding-left: 1rem;
+    list-style: none;
+    text-align: left;
+}
+
+main ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #295A66;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+p img {
+    margin-left: 5px; 
+}
