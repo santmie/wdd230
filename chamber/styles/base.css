@@ -223,6 +223,10 @@ main {
     font-size: 30px;
     font-weight: bold;
     background-color: #0c4767;
+    margin-bottom: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
 }
 
 .business {
@@ -232,19 +236,28 @@ main {
     color: #0c4767;
     font-size: 30px;
     font-weight: bold;
+    margin-top: 50px;
 }
 
 #business-grid {
     display: block;
 }
 
+#business-grid section{
+    padding-bottom: 20px;
+}
+
+
 .card1, .card2, main section {
     background-color: #fff;
     margin: 1rem 0;
     box-shadow: 5px 5px 10px #2660A4;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-bottom: 20px;
-    padding: 20px;
+}
+
+.card1{
+    border-top-left-radius: 50px;
 }
 
 main h2 {
@@ -273,6 +286,7 @@ main ul li {
 footer {
     background-color: #F19953;
     color: white;
+    margin-top: 50px;
 }
 
 .footer-container {
