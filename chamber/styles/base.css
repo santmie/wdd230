@@ -238,12 +238,13 @@ main {
     display: block;
 }
 
-main section {
+.card1, .card2, main section {
     background-color: #fff;
     margin: 1rem 0;
     box-shadow: 5px 5px 10px #2660A4;
     border-radius: 20px;
     padding-bottom: 20px;
+    padding: 20px;
 }
 
 main h2 {
