@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Images</title>
-    <meta name="description" content="Lazy Load Demonstration.">
+    <meta name="description" content="Responsive Images Demonstration.">
     <meta name="author" content="Crisanta N. Advincula">
     <meta property="og:title" content="WDD 230 - Web Frontend Development - Responsive Images">
     <meta property="og:type" content="website">
@@ -18,7 +18,13 @@
         <h1>Responsive Images</h1>
     </header>
     <main>
-
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+        </div>
     </main>
     <footer>
         <div>
