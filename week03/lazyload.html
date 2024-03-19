@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+    <meta name="description" content="Lazy Load Demonstration.">
+    <meta name="author" content="Crisanta N. Advincula">
+    <meta property="og:title" content="WDD 230 - Web Frontend Development - Lazy Load">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ytimg.com/vi/nua16SFonBE/maxresdefault.jpg">
+    <meta property="og:url" content="https://santmie.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="styles/lazyload.css">
+
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://picsum.photos/id/237/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/244/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/225/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/275/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/309/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/380/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <div>
+            <p> &copy;<span id="year"></span></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+<script src="scripts/getDates.js"></script> 
+</body>
+</html>
