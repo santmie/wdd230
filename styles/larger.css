@@ -30,4 +30,8 @@
     .card2 {
         grid-column: 3/3;
     }
+
+    iframe{
+        width: 100%;
+    }
 }

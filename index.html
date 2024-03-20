@@ -30,6 +30,16 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 450px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+            <img src="images/hero-large.webp" alt="hero image">
+        </picture>
+        <div class="herolabel">
+			<p>Manila Philippines Temple</p>
+		</div>
+    </div>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <div id="class-grid">
@@ -48,9 +58,10 @@
                 <h2>Information</h2>
                 <p>Quezon City, Philippines</p><br>
                 <p>Weather:</p><br>
-                <p>Page Visits:</p>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15442.675763756171!2d121.03797114427617!3d14.61792558797185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7c02a7dfb71%3A0xb08cea7ccd8b32ff!2sSocorro%2C%20Cubao%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1710921809616!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <div>
@@ -61,5 +72,6 @@
 <script src="scripts/getDates.js"></script> 
 <script src="scripts/showHamburger.js"></script> 
 <script src="scripts/selectMode.js"></script>  
+<script src="scripts/visit.js"></script>  
 </body>
 </html>
