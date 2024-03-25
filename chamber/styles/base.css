@@ -197,7 +197,7 @@ nav a:hover {
     padding: .25rem;
     font-weight: 700;
     font-size: 25px;
-    color:orangered; 
+    color:#180c01; 
     background: radial-gradient(#fff, #8ac8e5);
     box-shadow: 1rem 1rem 3rem #fff;
     opacity: 0.75;
@@ -214,10 +214,11 @@ nav a:hover {
 }
 
 .join {
-    background-color:  #e07800;;
-    color: white;
+    background-color:  #f59f3d;;
+    color: black;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
     padding: 10px 20px;
     margin-top: 50px;
     border-radius: 5px;
