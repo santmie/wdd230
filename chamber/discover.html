@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quezon City Chamber of Commerce</title>
+    <meta name="description" content="This name represents a city in the Philippines where the chamber operates.">
+    <meta name="author" content="Crisanta N. Advincula">
+    <meta property="og:title" content="WDD 230 - Project - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.goodfreephotos.com/albums/philippines/quezon-city/quezon-memorial-shrine-in-quenzon-city-philippines.jpg">
+    <meta property="og:url" content="https://santmie.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="QC Chamber of Commerce logo" width="100" height="100">
+        <span>Quezon City Chamber of Commerce</span>
+        <div class="social-header">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon" width="50" height="50"></a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon" width="50" height="50"></a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon" width="50" height="50"></a>
+        </div>
+    </header>
+    <nav>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li><a href="https://santmie.github.io/wdd230/chamber/index.html">Home</a></li>
+            <li class="active"><a href="#" class="wayfinding">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar-visit">
+                    <h2>Site Visit</h2>
+                    <p><span class="sidebar-content">Number of Visits: </span><span class="visits"></span></p>
+                </div>
+                <div class="sidebar-calendar">
+                    <h2>Calendar</h2>
+                    <iframe class="sidebar-content" src="https://calendar.google.com/calendar/embed?src=san.advincula%40gmail.com&ctz=Asia%2FTaipei" style="border: none; overflow: hidden;" width="300" height="300"></iframe>
+                </div>
+                <div class="sidebar-events">
+                    <h2>Events</h2>
+                    <ul class="sidebar-content">
+                        <li>QC Chamber of Commerce Local Leadership Summit: May 1, 2024, Quezon City Hall, Quezon City, Philippines</li>
+                        <li>QC Chanber of Commerce Street Fairs and Markets: August 21, 2024 Araneta Center, Quezon City, Philippines</li>
+                        <li>1st QC Chamber of Commerce Fun Run: October 30, 2024 - MOA Pasay City, Philippines</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+              <h2>Business Commercial Photos</h2>
+              <div class="image-container">
+                <div class="image-caption">
+                    <p>Cafe Shop</p >
+                    <picture>
+                        <img src="https://picsum.photos/id/395/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+                    </picture>
+                </div>
+                <div class="image-caption">
+                    <p>Merchandise Store</p>
+                    <picture>
+                        <img src="https://picsum.photos/id/1059/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+                    </picture>
+                </div>
+                <div class="image-caption">
+                    <p>Fruit Retailer</p>
+                    <picture>
+                        <img src="https://picsum.photos/id/1080/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+                    </picture>
+                </div>
+                <div class="image-caption">
+                    <p>Eatery/"Pinoy Carenderia"</p>
+                    <picture>
+                        <img src="https://picsum.photos/id/686/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+                    </picture>
+                </div>
+                <div class="image-caption">
+                    <p>Mall Shop/Retailer</p>
+                    <picture>
+                        <img src="https://picsum.photos/id/348/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+                    </picture>
+                </div>
+                <div class="image-caption">
+                    <p>Online Marketing</p>
+                    <picture>
+                        <img src="https://picsum.photos/id/180/400/600" alt="Picsum random photos" loading="lazy" width="400" height="600">
+                    </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer1">
+                <div class="footer-chamber">
+                    <img src="images/logo.png" alt="QC Chamber of Commerce logo" width="60" height="60">
+                    <span>Quezon City Chamber of Commerce</span>
+                </div>
+                <div class="footer-contact">
+                    <p>13th Avenue, Cubao Quezon City, Philippines</p>
+                    <p>qcchamber@gmail.com</p>
+                    <p>(02)-8731-4805</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/facebook.png" alt="fb icon" width="50" height="50"></a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon" width="50" height="50"></a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/instagram.png" alt="instagram icon" width="50" height="50"></a>
+                </div>
+            </div>
+            <div class="footer2"></div>
+                <p> &copy;<span id="year"></span><img src="images/phflag.jpg" alt="Philippines Flag" width="50" height="27"></p>
+                <p id="lastModified"></p>
+        </div>
+    </footer>
+<script src="scripts/getDates.js"></script> 
+<script src="scripts/showHamburger.js"></script> 
+<script src="scripts/selectMode.js"></script>  
+<script src="scripts/getVisits.js"></script> 
+</body>
+</html>

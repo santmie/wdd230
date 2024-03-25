@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="QC Chamber of Commerce logo">
+        <img src="images/logo.png" alt="QC Chamber of Commerce logo" width="100" height="100">
         <span>Quezon City Chamber of Commerce</span>
         <div class="social-header">
             <a href="https://facebook.com" target="_blank">
@@ -37,18 +37,24 @@
             <li><a href="#">Join</a></li>
         </ul>
     </nav>
-    <div id="hero">
-        <div id="hero-box">
-            <img id="hero-img" src="images/qc.jpg" alt="Philippines Quezon City Memorial Shrine">
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 450px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+            <img src="images/hero-large.webp" alt="hero image">
+        </picture>
+        <div class="herolabel1">
+		    <p>Welcome to Quezon City Chamber of Commerce</p>
+	    </div>
+        <div class="herolabel2">
+		    <p>A unified platform for businesses in Quezon City</p>
+	    </div>
+        <div class="herolabel3">
+		    <p>Join the Quezon City Chamber of Commerce today and embark on a journey to your business growth!</p>
+	    </div>
+        <div class='button-box'>
+            <a class='join' href="#">Join Us</a>
         </div>
-        <section id="hero-msg">
-            <h1 class="home-title">Welcome to Quezon City Chamber of Commerce</h1>
-            <h2>A unified platform for businesses in Quezon City</h2>
-            <p>Join the Quezon City Chamber of Commerce today and embark on a journey to your business growth!</p>
-            <div class='button-box'>
-                <a class='join' href="#">Join Us</a>
-            </div>
-        </section>
     </div>
     <main>
         <div id="class-grid">

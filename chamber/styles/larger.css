@@ -4,6 +4,40 @@
         width: auto;
     }
 
+    .herolabel1,.herolabel2,.herolabel3,.button-box {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .herolabel1 {
+        top: 10%; 
+    }
+    
+    .herolabel2 {
+        top: 25%; 
+    }
+    
+    .herolabel3 {
+        top: 60%;
+    }
+    
+    .button-box {
+        top: 80%;
+        padding-top: 30px;
+    }
+
+    .herolabel1 p {
+        font-size: 30px;
+    }
+    
+    .herolabel2 p {
+        font-size: 40px;
+    }
+    
+    .herolabel3 p {
+        font-size: 25px;
+    }
+
     #myButton {
         display: none;
     }
@@ -83,4 +117,37 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
+    .image-container img:hover {
+        transition: transform .5s;
+        opacity: .6;
+        transform: scale(1.1);
+    }
+
+    /* Discover css */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        gap: 20px;
+    }
+  
+    .sidebar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+
+    picture img {
+        max-width: none ;
+        max-height: none;
+      }
+  
+    .image-container {
+        display: grid;
+        overflow-y:scroll;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        max-height:900px;
+    }
+    
 }
