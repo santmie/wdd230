@@ -34,23 +34,18 @@
     <main>
         <h1>User Information</h1>
         <form method="get" action="record.html">
-            <label>User Name<span class="req"></span>
-                <br>
+            <label>User Name<span class="req"></span><br>
                 <input type="text" id="fullname" name="fullname" required></label>
-            <label>Password<span class="req"></span>
-                <br>
+            <label>Password<span class="req"></span><br>
                 <input type="text" id="password1" name="password1" pattern="[a-zA-Z0-9]{8,}" required title="At least eight (8) alpha-numeric characters"></label>
-            <label>Re-enter Your Password<span class="req"></span>
-                <br>
+            <label>Re-enter Your Password<span class="req"></span><br>
                 <input type="text" id="password2" name="password2" required></label>
             <div id="passworderror"></div>
-            <label>Email<span class="req"></span>
-                <br>
+            <label>Email<span class="req"></span><br>
                 <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" required title="Please enter a valid email address" placeholder="Please enter your byui.edu email"></label>
-            <label>Page Rating<span class="req"></span></label>
-                <br>
+            <label>Page Rating<br>
                 <span id="currentRating">1</span>
-                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="1">
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="1"></label>
             <p class="smaller">*️⃣ Indicates a required field</p>
             <button id="btnSubmit" type="submit">Create My Account</button>
         </form>
