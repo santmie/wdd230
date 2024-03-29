@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisanta N. Advincula - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Crisanta N. Advincula's course assignment portal.">
+    <meta name="author" content="Crisanta N. Advincula">
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ytimg.com/vi/nua16SFonBE/maxresdefault.jpg">
+    <meta property="og:url" content="https://santmie.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="mode">🌙</div>
+        <img src="images/profile.jpg" alt="Crisanta N. Advincula" width="100" height="156">
+        <span>Crisanta N. Advincula</span>
+    </header>
+    <nav>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li><a href="https://santmie.github.io/wdd230/index.html">Home</a></li>
+            <li><a href="https://santmie.github.io/wdd230/chamber/index.html">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li class="active"><a href="https://santmie.github.io/wdd230/form.html" class="wayfinding">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>User Information</h1>
+        <form method="get" action="record.html">
+            <label>User Name<span class="req"></span>
+                <br>
+                <input type="text" id="fullname" name="fullname" required></label>
+            <label>Password<span class="req"></span>
+                <br>
+                <input type="text" id="password1" name="password1" pattern="[a-zA-Z0-9]{8,}" required title="At least eight (8) alpha-numeric characters"></label>
+            <label>Re-enter Your Password<span class="req"></span>
+                <br>
+                <input type="text" id="password2" name="password2" required></label>
+            <div id="passworderror"></div>
+            <label>Email<span class="req"></span>
+                <br>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" required title="Please enter a valid email address" placeholder="Please enter your byui.edu email"></label>
+            <label>Page Rating<span class="req"></span></label>
+                <br>
+                <span id="currentRating">1</span>
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="1">
+            <p class="smaller">*️⃣ Indicates a required field</p>
+            <button id="btnSubmit" type="submit">Create My Account</button>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p> &copy;<span id="year"></span><img src="images/phflag.jpg" alt="Philippines Flag" width="50" height="27"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+<script src="scripts/getDates.js"></script> 
+<script src="scripts/showHamburger.js"></script> 
+<script src="scripts/selectMode.js"></script>  
+<script src="scripts/visit.js"></script>
+<script src="scripts/formvalidation.js"></script>  
+</body>
+</html>

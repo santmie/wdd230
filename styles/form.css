@@ -1,0 +1,95 @@
+form {
+	margin: 20px auto;
+    max-width: 200px; /* Example maximum width for the form */
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+h1 {
+	margin: 20px auto;
+	font-size: 1.5rem;
+}
+
+input,
+textarea,
+select {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	border-bottom: 1px solid navy;
+	font-size: 1.1rem;
+}
+
+button {
+	padding: 10px;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+label {
+	color: navy;
+	font-size: 16px;
+    text-align: left;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+input::placeholder {
+	font-size: 13px;
+}
+
+#passworderror {
+    visibility: visible; 
+}
+
+.visible {
+    visibility: visible;
+    margin: 10px;
+    padding: 0.5rem;
+    color: red;
+}
+
+
+#keyphrase:invalid {
+	background-color: #fff0f3;
+	animation: shaketext 500ms;
+}
+
+/* input[required] ^ label::after {
+	font-size: 10px;
+	content: " *️⃣";
+} */
+
+.req::before {
+	font-size: 10px;
+	content: " *️⃣";
+}
+
+.smaller {
+	font-size: 11px;
+	position: flex;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+@keyframes shaketext {
+	25% {
+		transform: translateX(3px);
+	}
+	50% {
+		transform: translateX(-3px);
+	}
+	75% {
+		transform: translateX(3px);
+	}
+}
+
+#currentRating {
+	font-size: 2rem;
+	color: navy;
+}
+
