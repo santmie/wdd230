@@ -71,8 +71,8 @@ input::placeholder {
 
 .smaller {
 	font-size: 11px;
-	position: flex;
-    align-content: center;
+	display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 
