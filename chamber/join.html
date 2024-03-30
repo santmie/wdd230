@@ -40,7 +40,6 @@
     <main>
         <h1>Membership Application Form</h1>
         <form method="get" action="thankyou.html">
-            <div id="passworderror"></div>
             <label class="input-container">First Name<span class="req"></span><br>
                 <input type="text" id="fname" name="fname" required></label>
             <label class="input-container">Last Name<span class="req"></span><br>
@@ -53,23 +52,81 @@
                 <input type="tel" id="phone" name="phone" required></label>
             <label class="input-container">Business/Organization's Name<span class="req"></span><br>
                 <input type="text" id="orgName" name="orgName" required></label><br>
-            <div class="membership-level">Membership Level</div><br>
-            <label class="radio-container">NP Membership is for non-profit organizations and there is no fee.
-                <input type="radio" name="membership" value="np">
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">Bronze Membership
-                <input type="radio" name="membership" value="bronze">
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">Silver Membership
-                <input type="radio" name="membership" value="silver">
-                <span class="checkmark"></span>
-              </label>
-              <label class="radio-container">Gold Membership
-                <input type="radio" name="membership" value="gold">
-                <span class="checkmark"></span>
-              </label><br>
+            
+            <div class="membership-container">
+                <div class="membership-container1">
+                <div class="membership-level">Membership Level</div><br>
+                <label class="radio-container">NP Membership is for non-profit organizations and there is no fee.
+                    <input type="radio" name="membership" value="np">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Bronze Membership
+                    <input type="radio" name="membership" value="bronze">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Silver Membership
+                    <input type="radio" name="membership" value="silver">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Gold Membership
+                    <input type="radio" name="membership" value="gold">
+                    <span class="checkmark"></span>
+                </label>
+                </div>
+                <div class="membership-container2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="5" scope="colgroup">Membership Level Benefits</th>
+                            </tr>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">NP</th>
+                                <th scope="col">Bronze</th>
+                                <th scope="col">Silver</th>
+                                <th scope="col">Gold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cost</td>
+                                <td>Free</td>
+                                <td>$50</td>
+                                <td>$100</td>
+                                <td>$200</td>
+                            </tr>
+                            <tr>
+                                <td>Special Events</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td>Training</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td>Advertising</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td>Networking Opportunities</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><br><br>
             <label class="input-container">Business/Organization's Description<br>
                 <textarea id="orgDescription" name="orgDescription"></textarea></label><br>
             <input type="hidden" id="timeStamp" name="timeStamp">
