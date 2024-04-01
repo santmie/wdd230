@@ -19,7 +19,7 @@ function displayLinks(data) {
         
         week.links.forEach((link, index) => {
             const a = document.createElement('a');
-            a.href = baseURL + link.url;
+            a.href = link.url;
             a.textContent = link.title;
             a.target = "_blank";
             li.appendChild(a);
