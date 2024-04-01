@@ -1,0 +1,33 @@
+{
+    "familyName": "Advincula",
+    "moveInDate": "2024-03-15",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Moises Advincula",
+            "gender": "Male",
+            "birthdate": "1952-01-20"
+        },
+        {
+            "name": "Dolores Advincula",
+            "gender": "Female",
+            "birthdate": "1950-03-31"
+        },
+        {
+            "name": "Ozaman Advincula",
+            "gender": "Male",
+            "birthdate": "1980-10-15"
+        },
+        {
+            "name": "Crisanta Advincula",
+            "gender": "Female",
+            "birthdate": "1983-02-04"
+        },
+        {
+            "name": "Morris Advincula",
+            "gender": "Male",
+            "birthdate": "1987-10-18"
+        }
+    ]
+}
