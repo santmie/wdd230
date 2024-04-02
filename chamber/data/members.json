@@ -1,0 +1,61 @@
+{
+    "members": [
+      {
+        "name": "Abenson Ventures Inc.",
+        "address": "8001A EPIFANIO DELOS SANTOS AVENUE BARANGAY VETERANS VILLAGE QUEZON CITY METRO MANILA",
+        "phone": "9189143585",
+        "website": "http://www.abenson.com",
+        "image": "images/abenson.jpg",
+        "membership_level": "Gold"
+      },
+      {
+        "name": "SPD Jobs, Inc.",
+        "address": "3/F LEMON SQUARE BLDG. 1199 EDSA QUEZON CITY METRO MANILA",
+        "phone": "(02) 8374-8761",
+        "website": "www.spdjobs.ph",
+        "image": "images/spd.jpg",
+        "membership_level": "Silver"
+      },
+      {
+        "name": "Kasa Arkhitekton Inc",
+        "address": "UNIT 201 APC BUILDING QUEZON CITY METRO MANILA",
+        "phone": "(+632) 332 5625",
+        "website": "http://www.kasa.com",
+        "image": "images/kasa.jpg",
+        "membership_level": "Bronze"
+        },
+      {
+        "name": "FBE Brewing Point Inc.",
+        "address": "56 CONGRESSIONAL AVENUE EXT. COR. TM KALAW ST. QUEZON CITY METRO MANILA",
+        "phone": "0917 576 2724",
+        "website": "http://www.brewingpoint.com",
+        "image": "images/brewing.png",
+        "membership_level": "Gold"
+        },
+      {
+        "name": "Enriquez Security Services Incorporated",
+        "address": "30 CETACIO ST. QUEZON CITY METRO MANILA",
+        "phone": "9178112484",
+        "website": "http://www.enriquezsecurity.com",
+        "image": "images/enriquez.jpg",
+        "membership_level": "NP"
+        },
+      {
+        "name": "GMB Franchise Developers",
+        "address": "710 MAGNOLIA STREET BLISS TOWN HOMES CORONADO AVE. HULO CITY OF MANDALUYONG METRO MANILA",
+        "phone": "09178169608",
+        "website": "http://www.gmbfranchise.com",
+        "image": "images/gmb.png",
+        "membership_level": "Silver"
+        },
+      {
+        "name": "JNS First Employment",
+        "address": "1870 ROS ALVA BLDG. E RODRIGUEZ SR. QUEZON CITY METRO MANILA",
+        "phone": "9176252675",
+        "website": "http://www.jnsfirst.com",
+        "image": "images/jns.jpg",
+        "membership_level": "Bronze"
+        }
+    ]
+  }
+  
