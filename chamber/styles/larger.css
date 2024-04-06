@@ -169,5 +169,35 @@
         grid-column: 1 / span 2; /* Span both columns */
     }
     
+    /* directory grid and list view css */
+    #members-list.list-view {
+        display: block; /* Show as block */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     
+    #members-list.list-view li {
+        display: flex;
+        flex-direction:row; 
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: 1px solid #bbb;
+        text-align: left;
+        flex-wrap: wrap; /* Allow flex items to wrap */
+    }
+    
+    #members-list.list-view li span,
+    #members-list.list-view li a {
+        flex: 1;
+        margin-right: 0.5rem;
+        word-wrap: break-word; /* Wrap long words */
+        margin-left: 50px;
+    }
+    
+    #members-list.list-view li a {
+        flex: 2; /* Make website link wider */
+        text-decoration: none;
+    }
 }
