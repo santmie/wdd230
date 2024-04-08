@@ -74,9 +74,14 @@
                     <img class="icon" src="images/cloudy.png" alt="Rain icons created by iconixar - Flaticon">
                     <span>Weather</span>
                 </div>
-                <p>Quezon City, Philippines</p><br>
-                <p>Weather:</p><br>
-                <p>Page Visits:</p>
+                <p class="temperature">Current Temperature:</p><br>
+                    <span id="current-temp"></span>
+                    <figure>
+                        <img id="weather-icon" src="placeholder-image.png" alt="weather icon">
+                        <figcaption></figcaption>
+                    </figure><br>
+                <p class="temperature">3 Day Temperature Forecast:</p><br>
+                    <ul id="forecast-list"></ul>
             </div>
         </div>
         <div class="business">
@@ -85,16 +90,16 @@
         </div>
         <div id="business-grid">
             <section class="spotlight1">
-                <h2>Spotlight1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2>Spotlight 1</h2>
+                <div id="members-random1"></div>
             </section>
             <section class="spotlight2">
-                <h2>Spotlight2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2>Spotlight 2</h2>
+                <div id="members-random2"></div>
             </section>
             <section class="spotlight3">
                 <h2>Spotlight3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div id="members-random3"></div>
             </section>
         </div>
     </main>
@@ -126,6 +131,8 @@
     </footer>
 <script src="scripts/getDates.js"></script> 
 <script src="scripts/showHamburger.js"></script> 
-<script src="scripts/selectMode.js"></script>  
+<script src="scripts/selectMode.js"></script>
+<script src="scripts/weather.js"></script>
+<script src="scripts/membership.js"></script>  
 </body>
 </html>

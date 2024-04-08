@@ -790,3 +790,14 @@ tbody tr:nth-child(odd) {
     max-height: 120px;
     border: 1px solid #333;
 }
+
+/* weather css */
+
+.temperature{
+    color: darkblue;
+    font-weight: bold;
+}
+
+#forecast-list{
+    text-align: center;
+}
