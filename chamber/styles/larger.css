@@ -4,6 +4,13 @@
         width: auto;
     }
 
+    .hero img {
+        width: 100%; 
+        height: auto; 
+        max-width: none; 
+        max-height: none;
+    }
+
     .herolabel1,.herolabel2,.herolabel3,.button-box {
         margin-left: 100px;
         margin-right: 100px;
