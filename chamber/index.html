@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Home Page</title>
-    <meta name="description" content="This is the Home Page for the Chamber Site.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to the Home Page for Quezon City Chamber of Commerce Project</title>
+    <meta name="description" content="This is the Home Page for Quezon City Chamber of Commerce Project.">
     <meta name="author" content="Crisanta N. Advincula">
     <meta property="og:title" content="Home Site">
     <meta property="og:type" content="website">
@@ -16,6 +16,7 @@
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
+    <div class="main-content">
     <header>
         <img src="images/logo.png" alt="QC Chamber of Commerce logo" width="100" height="100">
         <span>Quezon City Chamber of Commerce</span>
@@ -57,6 +58,10 @@
         </div>
     </div>
     <main>
+        <div id="banner" class="hidden">
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+            <button id="closeBanner">Close</button>
+        </div>
         <div id="class-grid">
             <div class="card1">
                 <div class="events">
@@ -64,9 +69,9 @@
                     <span>Events</span>
                 </div>
                 <ul>
-                    <li>Events 1:<a href="#"></a></li>
-                    <li>Events 2:<a href="#"></a></li>
-                    <li>Events 3:<a href="#"></a></li>
+                    <li class="events-home">Events 1: <span>QC Chamber of Commerce Local Leadership Summit: May 1, 2024, Quezon City Hall, Quezon City, Philippines</span></li>
+                    <li class="events-home">Events 2: <span>QC Chanber of Commerce Street Fairs and Markets: August 21, 2024 Araneta Center, Quezon City, Philippines</span></li>
+                    <li class="events-home">Events 3: <span>1st QC Chamber of Commerce Fun Run: October 30, 2024 - MOA Pasay City, Philippines</span></li>
                 </ul>
             </div>
             <div class="card2">
@@ -91,18 +96,15 @@
         <div id="business-grid">
             <section class="spotlight1">
                 <h2>Spotlight 1</h2>
-                <div id="members-random1"></div>
+                <div id="members-gold"></div>
             </section>
             <section class="spotlight2">
                 <h2>Spotlight 2</h2>
-                <div id="members-random2"></div>
-            </section>
-            <section class="spotlight3">
-                <h2>Spotlight3</h2>
-                <div id="members-random3"></div>
+                <div id="members-silver"></div>
             </section>
         </div>
     </main>
+    </div>
     <footer>
         <div class="footer-container">
             <div class="footer1">
@@ -129,10 +131,12 @@
                 <p id="lastModified"></p>
         </div>
     </footer>
-<script src="scripts/getDates.js"></script> 
-<script src="scripts/showHamburger.js"></script> 
-<script src="scripts/selectMode.js"></script>
 <script src="scripts/weather.js"></script>
-<script src="scripts/membership.js"></script>  
+<script src="scripts/membership.js"></script>
+<script src="scripts/getDates.js"></script> 
+<script src="scripts/showHamburger.js"></script>
+<script src="scripts/banner.js"></script>
+
+
 </body>
 </html>

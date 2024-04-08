@@ -1,4 +1,5 @@
 // select HTML elements in the document
+document.addEventListener('DOMContentLoaded', function() {
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
@@ -80,3 +81,5 @@ function formatDate(dateString) {
 }
 
 displayWeather();
+
+});

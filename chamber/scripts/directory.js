@@ -1,8 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
 const url = "https://santmie.github.io/wdd230/chamber/data/members.json";
 const membersList = document.querySelector('#members-list');
 
-const gridButton = document.getElementById('grid');
-const listButton = document.getElementById('list');
+const gridButton = document.getElementById('view-grid');
+const listButton = document.getElementById('view-list');
 
 async function getMembers() {
     try {
@@ -17,6 +18,8 @@ async function getMembers() {
 getMembers(); 
 
 let isGridView = true; // Initial view is grid
+// Set grid view as default for spotlight 1 and 2
+
 gridButton.classList.add('active');
 
 gridButton.addEventListener('click', () => {
@@ -128,4 +131,4 @@ function createListItem(member) {
     return listItem;
 }
 
-
+});
